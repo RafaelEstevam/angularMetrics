@@ -109,11 +109,11 @@ angular.module("myApp").controller('indexCtrl', function($scope, $http) {
 	//FILTRA DADOS IGUAIS DE UMA LISTA QUALQUER DE ACORDO COM UM PARÂMETRO ESPECIFICADO.
 	function removeEqualData(list, prop){
 		var newArray = [];
-    var lookup  = {};
-    for(var i in list) {
-        lookup[list[i][prop]] = list[i];
-    }
-    for(i in lookup) {
+    	var lookup  = {};
+    	for(var i in list) {
+        	lookup[list[i][prop]] = list[i];
+    	}
+    	for(i in lookup) {
 			newArray.push(lookup[i]);
 		}
 		return newArray;
