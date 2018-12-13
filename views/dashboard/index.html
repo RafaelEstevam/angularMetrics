@@ -1,0 +1,116 @@
+<div class="container-fluid">
+		<div class="row">
+			<div ng-include src="'views/common/menu.html'" class="col-xs-2 col-md-2 bg-dark p-0" id="main-sidebar"></div>
+			<main class="col-md-10">
+				<div ng-include src="'views/common/header.html'"></div>
+
+				<div class="row mt-3 p-2">
+					<div class="col-sm-12">
+						<h4 class="font-weight-light"><i class="material-icons align-middle font-large">data_usage</i> Dashboard</h4>
+					</div>
+				</div>
+
+				<div class="row mt-1 p-2">
+
+					<div class="col-md-3 mt-2">
+						<div class="row no-gutters bg-4 rounded p-3 card-interactions">
+							<div class="col-3 col-md-3 icon-card-position">
+								<i class="material-icons icon-card float-left text-white bg-4">show_chart</i>
+							</div>
+							<div class="col-6 col-md-8 mt-3">
+								<p class="small m-0 text-white">Total:</p>
+								<h5 class="font-weight-light text-white">Interações</h5>
+							</div>
+							<div class="col-3 col-md-4 mt-3">
+								<p class="text-right text-white total-interaction">{{ctrl.totalInteractions}}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 mt-2">
+						<div class="row no-gutters bg-1 rounded p-3 card-interactions">
+							<div class="col-3 col-md-3 icon-card-position">
+								<i class="material-icons icon-card float-left text-white bg-1">share</i>
+							</div>
+							<div class="col-6 col-md-8 mt-3">
+								<p class="small m-0 text-white">Total:</p>
+								<h5 class="font-weight-light text-white">Compartilhar</h5>
+							</div>
+							<div class="col-3 col-md-4 mt-3">
+								<p class="text-right text-white total-interaction">{{ctrl.totalShare}}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 mt-2">
+						<div class="row no-gutters bg-info rounded p-3 card-interactions">
+							<div class="col-3 col-md-3 icon-card-position">
+								<i class="material-icons icon-card float-left text-white bg-info">thumb_up_alt</i>
+							</div>
+							<div class="col-6 col-md-8 mt-3">
+								<p class="small m-0 text-white">Total:</p>
+								<h5 class="font-weight-light text-white">Favoritos</h5>
+							</div>
+							<div class="col-3 col-md-4 mt-3">
+								<p class="text-right text-white total-interaction">{{ctrl.totalFavorites}}</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 mt-2">
+						<div class="row no-gutters bg-3 rounded p-3 card-interactions">
+							<div class="col-3 col-md-3 icon-card-position">
+								<i class="material-icons icon-card float-left text-white bg-3">mode_comment</i>
+							</div>
+							<div class="col-6 col-md-8 mt-3">
+								<p class="small m-0 text-white">Total:</p>
+								<h5 class="font-weight-light text-white">Comentários</h5>
+							</div>
+							<div class="col-3 col-md-4 mt-3">
+								<p class="text-right text-white total-interaction">{{ctrl.totalComments}}</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="row mt-4 pl-4 pr-4">
+					<div class="col-sm-12 shadow rounded bg-white">
+						<div class="row rounded-top bg-light border-bottom p-2">
+							<div class="col-sm-6 col-md-4">
+								<h3 class="text-dark font-weight-light">Relatório de interações</h3>
+							</div>
+							<div class="col-sm-4 offset-sm-2 col-md-2 offset-md-6 p-1">
+								<div class="col-sm-12">
+									<button class="btn btn-info col-sm-12 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filtrar marca</button>
+									<div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" ng-repeat="brand in ctrl.brandFilter" ng-click="ctrl.getChart(brand.brand_id)">
+											<div class="brand-img float-left mr-2">
+												<img class="brand-img-icon" src="{{brand.brand_img}}">
+											</div>
+											<p class="mt-2">{{brand.brand_name}}</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-7 mt-3">
+								<div class="float-left">
+									<div class="brand-img mr-2">
+										<img class="brand-img-icon" src="{{ctrl.brandImg}}">
+									</div>
+								</div>
+								<h2 class="float-left">{{ctrl.brandName}}</h2>
+							</div>
+							<div class="col-md-5 mt-3">
+								<p class="float-left">Total de interações que o usuário teve com a marca.</p>
+							</div>
+						</div>
+						<hr>
+						<div class="ct-chart chart-bar-dashboard ct-perfect-fourth"></div>
+					</div>
+				</div>
+				<div ng-include src="'views/common/footer.html'"></div>
+			</main>
+		</div>
+	</div>

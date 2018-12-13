@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Ambev",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ambev_logo.svg/1280px-Ambev_logo.svg.png"
+  },
+  {
+    "id": 2,
+    "name": "Nike",
+    "image": "http://pngimg.com/uploads/nike/nike_PNG12.png"
+  },
+  {
+    "id": 3,
+    "name": "Honda",
+    "image": "http://www.carlogos.org/logo/Honda-logo-1920x1080.png"
+  },
+  {
+    "id": 3,
+    "name": "Honda",
+    "image": "http://www.carlogos.org/logo/Honda-logo-1920x1080.png"
+  },
+  {
+    "id": 4,
+    "name": "Oi",
+    "image": "https://upload.wikimedia.org/wikipedia/pt/9/91/Logotipo_da_Oi.png"
+  },
+  {
+    "id": 5,
+    "name": "Itaú",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Itau.svg/1011px-Itau.svg.png"
+  }
+]

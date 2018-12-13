@@ -1,0 +1,235 @@
+body {
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.main {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-light {
+  color: #eee;
+}
+
+.bg-main {
+  background-color: #2e4996;
+}
+
+.bg-1{
+  background-color: #1784b8;
+}
+
+.bg-2{
+  background-color: #1784b8;
+}
+
+.bg-3{
+  background-color: #17b88b;
+}
+
+.bg-4{
+  background-color: #1766b8;
+}
+
+.bg-inverse-color {
+  background-color: #1e2e60;
+}
+
+.min-text {
+  font-size: 12px;
+}
+
+.big-text {
+  font-size: 80px !important;
+}
+
+.no-border {
+  border: 0px;
+  border-radius: 0px;
+}
+
+/*-------------------*/
+/*------HEADER-------*/
+/*-------------------*/
+
+.search {
+  border-radius: 0px;
+  border-radius: 1000px;
+  background: #eee;
+  border-width: 2px
+}
+
+.btn-user i{ 
+  font-size: 40px;
+}
+
+
+/*-------------------*/
+/*--------MENU-------*/
+/*-------------------*/
+.main-sidebar {
+  padding: 0px;
+  min-height: 100vh;
+}
+
+.main-sidebar.mobile {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  width: 80%;
+  height: 100%;
+}
+
+.nav .nav {
+  width: 100%;
+}
+
+.nav-link {
+  color: #eee;
+  border-left: 3px solid transparent;
+  padding: 15px;
+  transition: ease-in all 0.3s;
+}
+
+.nav-link:hover {
+  color: #eee;
+  border-color: #2e4996;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay-drawer {
+  background: rgba(0, 0, 0, 0.2);
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: -25%;
+  cursor: pointer;
+}
+
+/*--------------------*/
+/*-----Dashboard------*/
+/*--------------------*/
+
+.icon-card{
+  font-size: 30px !important;
+  box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icon-card-position{
+	position: absolute;
+	top: -25px;
+}
+
+.card-interactions{
+  min-height: 85px;
+}
+
+.total-interaction{
+  font-size: 30px;
+}
+
+.chart-bar-dashboard:before {
+  padding-bottom: 258px !important;
+}
+
+.brand-img{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  border-radius: 1000px;
+  padding: 4px;
+  overflow: hidden;
+}
+
+.brand-img img{
+  width: 100%;
+}
+
+.brand-img-icon{
+  width: 100%;
+}
+
+.img-brand{
+  height: 70px
+}
+
+.dropdown-item{
+  cursor: pointer;
+  border-left: 2px solid transparent;
+}
+
+.dropdown-item:hover{
+  border-left: 2px solid #17a2b8;
+}
+
+/*-----Bar chart -----*/
+.ct-series-a .ct-bar {
+  stroke: #17a2b8 !important;
+}
+
+/*-----Pie chart ----*/
+.ct-series-a .ct-slice-pie {
+  fill: #a2b5ea !important;
+}
+
+.ct-series-b .ct-slice-pie {
+  fill: #8aa0dc !important;
+}
+
+.ct-series-c .ct-slice-pie {
+  fill: #6681cc !important;
+}
+
+/*-----------------*/
+/*-----Mobile------*/
+/*-----------------*/
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mobile-sidebar{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .overlay {
+    background-color: #343a408c;
+    height: 100%;
+  }
+
+  /*-----dashboard-----*/
+  .icon-card {
+    font-size: 50px !important;
+  }
+
+  .icon-card-position{
+  	position: relative;
+  	top: 0px
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
